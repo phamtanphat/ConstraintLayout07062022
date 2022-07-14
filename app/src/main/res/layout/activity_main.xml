@@ -6,14 +6,48 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/text_view_a"
+        android:background="#f20"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:text="View A"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/text_view_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
-    <ImageView
+    <TextView
+        android:id="@+id/text_view_b"
+        android:background="#2F93C5"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:text="View B"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintStart_toEndOf="@id/text_view_a"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/text_view_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/text_view_c"
+        android:background="#6713B1"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:text="View C"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintStart_toEndOf="@id/text_view_b"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/image_background"
-        app:layout_constraintDimensionRatio="338:760"
-        android:layout_width="100dp"
-        android:layout_height="0dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
